@@ -1,0 +1,25 @@
+#canvas {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border: 1px solid #000;
+}
+
+/* Estilo para as divs de cores */
+.color-box {
+    width: 50px; 
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.indigo{
+    background-color: #312e81;
+}
+
+.slate{
+    background-color: #1e293b;;
+}
+.slate:hover{
+    background-color: #334155;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de História Medieval</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js"></script>
+</head>
+<body class="amber">
+
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+          <h1 class="mt-5 fw-normal">Escolha sua aventura medieval</h1>
+      </div>
+  </div>
+    
+  <div class="col-6 p-3">
+    <form id="form">
+
+      <div class="form-group">
+        <label for="nome">Nome do Personagem:</label>
+        <input type="text" class="form-control" id="nome">
+      </div>
+  
+      <div class="form-group">
+        <label for="localizacao">Localização da Aventura:</label>
+        <input type="text" class="form-control" id="localizacao">
+      </div>
+  
+      <div class="form-group">
+        <label for="idade">Idade do Personagem:</label>
+        <input type="number" class="form-control" id="idade" min="1" max="100">
+      </div>
+      <div class="form-group">
+        <label for="idade">Altura:</label>
+        <input type="number" class="form-control" id="altura" step="0.01" min="1" max="3">
+      </div>
+  
+      <div class="form-group">
+        <label>Gênero do Personagem:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="genero" value="masculino" id="masculino">
+          <label class="form-check-label">Masculino</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="genero" value="feminino" id="feminino">
+          <label class="form-check-label">Feminino</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="genero" value="other" id="outros">
+          <label class="form-check-label">Outro</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Raça de Personagem</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="raca" value="humano" id="humano">
+          <label class="form-check-label">Humano</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="raca" value="elfo" id="elfo">
+          <label class="form-check-label">Elfo</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="raca" value="anao" id="anao">
+          <label class="form-check-label">Anão</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="raca" value="orc" id="orc">
+          <label class="form-check-label">Orc</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="raca" value="mago" id="mago">
+          <label class="form-check-label">Mago</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Qual clan você pertence?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="clan" value="Paladino" id="paladino">
+          <label class="form-check-label">Paladinos</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="clan" value="Irmandade" id="irmandadeDeSangue">
+          <label class="form-check-label">Irmandade de Sangue</label>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label>Armas Escolhidas:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="armas" value="Espada" id="espada">
+          <label class="form-check-label">Espada</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="armas" value="Arco" id="arco">
+          <label class="form-check-label">Arco</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="armas" value="Cajado" id="cajado">
+          <label class="form-check-label">Cajado</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="armas" value="Machado" id="machado">
+          <label class="form-check-label">Machado</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="armas" value="Adaga" id="adaga">
+          <label class="form-check-label">Adaga</label>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <button type="button" class="btn slate text-white" onclick="gerarHistoria()">Gerar História</button>
+      </div>
+    </form>
+  </div>
+  <div>
+    <div class="col-12 mb-5 border" id="historia">
+
+    </div>
+  </div>
+  </div>
+</body>
+</html>
